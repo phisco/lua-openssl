@@ -477,7 +477,7 @@ static int luaclose_openssl(lua_State *L)
   return 0;
 }
 
-LUALIB_API int luaopen_openssl(lua_State*L)
+LUALIB_API int luaopen_luaopenssl(lua_State*L)
 {
   if (atomic_fetch_add(&init, 1) == 0)
   {
